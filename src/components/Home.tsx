@@ -1,9 +1,10 @@
 import { FaOpencart } from 'react-icons/fa';
-import { ProductsProps } from '../types/products';
+import { ItemsProps } from '../types/products';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
-const Home = ({ items, setItems }: ProductsProps) => {
-  const [searchParams, setSearchParams] = useSearchParams();
+const Home = ({ items, setItems }: ItemsProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Products from './components/Products';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   const [items, setItems] = useState<string>('');
@@ -17,6 +18,7 @@ function App() {
             path="/products/search"
             element={<Products items={items} setItems={setItems} />}
           />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </Router>
     </>

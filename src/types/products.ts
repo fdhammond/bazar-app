@@ -3,8 +3,6 @@ export interface ProductsProps {
   total: number;
   skip: number;
   limit: number;
-  items: string;
-  setItems: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export interface ProductProps {
@@ -19,4 +17,9 @@ export interface ProductProps {
   category: string;
   thumbnail: string;
   images: string[];
+}
+
+export interface ItemsProps {
+  items: string;
+  setItems: React.Dispatch<React.SetStateAction<string>>;
 }

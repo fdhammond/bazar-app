@@ -1,8 +1,8 @@
 import Product from './Product';
 import productsList from '../utils/productsList.json';
-import { ProductsProps } from '../types/products';
+import { ItemsProps, ProductsProps } from '../types/products';
 
-const Products = ({ items }: ProductsProps) => {
+const Products = ({ items }: ItemsProps) => {
   if (!items) {
     return;
   }
